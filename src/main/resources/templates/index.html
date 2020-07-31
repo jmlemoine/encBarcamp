@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuestas</title>
+</head>
+<body>
+<div>
+    <h1>Lista de Encuestas</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Pregunta #1</th>
+                <th>Pregunta #2</th>
+                <th>Pregunta #3</th>
+                <th>Pregunta #4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="encuesta : ${listEncuestas}">
+                <td th:number=""${encuesta.pregunta1}></td>
+                <td th:number=""${encuesta.pregunta2}></td>
+                <td th:number=""${encuesta.pregunta3}></td>
+                <td th:number=""${encuesta.pregunta4}></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
